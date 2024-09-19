@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dream-shop
+  datasource:
+    url: jdbc:postgresql://localhost:5433/dreamshop
+    username: chaiaurcode
+    password: chaiaurcode
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

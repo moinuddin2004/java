@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ecom
+  datasource:
+    url: jdbc:postgresql://localhost:5433/ecomdb
+    username: chaiaurcode
+    password: chaiaurcode
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      platform: postgres
+      mode: always
