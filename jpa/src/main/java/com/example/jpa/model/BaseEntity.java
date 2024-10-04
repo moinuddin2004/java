@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class BaseEntity {
     @Id
     @GeneratedValue
-    private Integer Id;
+    private Long Id;
     private LocalDateTime createdAt;
     private LocalDateTime lastModifiedAt;
     private String createdBy;
