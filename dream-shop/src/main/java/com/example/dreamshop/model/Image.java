@@ -16,8 +16,8 @@ public class Image {
     private Long id;
     private String fileName;
     private String fileType;
-    @Lob
-    private Blob image;
+//    @Lob
+//    private Blob image;
     private String downloadURL;
     @ManyToOne
     @JoinColumn(name="product_id")

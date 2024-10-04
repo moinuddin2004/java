@@ -1,0 +1,11 @@
+package com.example.dreamshop.repo;
+
+
+import com.example.dreamshop.model.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface OrderRepo extends JpaRepository<Order,Long> {
+   List<Order>  findByUserId(Long userId);
+}
